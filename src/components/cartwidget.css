@@ -1,0 +1,10 @@
+.cartWidget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-icono{
+    height: 1.5rem;
+    width: auto;
+}
