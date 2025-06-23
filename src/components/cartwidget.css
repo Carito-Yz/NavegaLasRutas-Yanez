@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.cartWidget h2{
+    font-family:'Times New Roman', Times, serif;
+}
+
 .carrito-icono{
     height: 1.5rem;
     width: auto;
