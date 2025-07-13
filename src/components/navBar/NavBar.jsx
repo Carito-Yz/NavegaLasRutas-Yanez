@@ -1,6 +1,6 @@
 import "./navbar.css";
-import logoTienda from "../assets/logo-tienda.jpg";
-import CartWidget from "../components/cartWidget";
+import logoTienda from "../../assets/logo-tienda.jpg";
+import CartWidget from "../cartWidget/CartWidget";
 
 const NavBar = () => {
   return (
@@ -11,9 +11,9 @@ const NavBar = () => {
 
         <div className="menu-container">
             <ul className="menu">
-                <li>Catálogo</li>
-                <li>Categorias</li>
-                <li>Contacto</li>
+                <li>Pelotas</li>
+                <li>Rodilleras</li>
+                <li>Indumentaria</li>
             </ul>
         </div>
 
