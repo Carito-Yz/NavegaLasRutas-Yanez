@@ -1,7 +1,7 @@
 import "./itemlistcontainer.css";
 import getProducts from "../../data/data";
 import { useEffect, useState } from "react";
-import Item from "../item/Item"
+import ItemList from "../itemList/ItemList"
 
 const ItemListContainer = (props) => {
   
@@ -18,11 +18,7 @@ const ItemListContainer = (props) => {
   
   return (
     <div className="itemlist-container">
-        {
-          products.map((product) => 
-            <Item product = {product} key={product.id}/>
-          )
-        }
+        <ItemList products = {products}/>
     </div>
   )
 }
