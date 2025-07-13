@@ -5,7 +5,7 @@ const products = [
     description: "Pelota oficial FIVB.",
     price: 25000,
     stock: 0,
-    image: "",
+    image: "/img/pelota-mikasa-v200w.jpg",
     category: "pelota"
   },
   {
@@ -14,7 +14,7 @@ const products = [
     description: "Pelota profesional de cuero sintético.",
     price: 23000,
     stock: 5,
-    image: "",
+    image: "/img/pelota-molten-v5m4000.jpg",
     category: "pelota"
   },
   {
@@ -23,7 +23,7 @@ const products = [
     description: "Ideal para voley de playa.",
     price: 21000,
     stock: 6,
-    image: "",
+    image: "/img/pelota-wilson-avp.jpg",
     category: "pelota"
   },
   {
@@ -32,7 +32,7 @@ const products = [
     description: "Alta durabilidad y control.",
     price: 19500,
     stock: 4,
-    image: "",
+    image: "/img/pelota-mikasa-v330w.jpg",
     category: "pelota"
   },
   {
@@ -41,7 +41,7 @@ const products = [
     description: "Diseño resistente para entrenamientos.",
     price: 18000,
     stock: 8,
-    image: "",
+    image: "/img/pelota-molten-cocida-ms500-p3s.jpg",
     category: "pelota"
   },
   {
@@ -50,7 +50,7 @@ const products = [
     description: "Excelente calidad-price.",
     price: 20000,
     stock: 3,
-    image: "",
+    image: "/img/pelota-molten-v5m4000.jpg",
     category: "pelota"
   },
   {
@@ -59,16 +59,16 @@ const products = [
     description: "Para uso recreativo.",
     price: 16000,
     stock: 9,
-    image: "",
+    image: "/img/pelota-reebok-soft-touch.jpg",
     category: "pelota"
   },
   {
     id: 8,
-    name: "Pelota Nike Elite",
+    name: "Pelota Nike All Court",
     description: "Liviana y precisa.",
     price: 17000,
     stock: 0,
-    image: "",
+    image: "/img/pelota-nike-all-court.jpg",
     category: "pelota"
   },
   {
@@ -77,7 +77,7 @@ const products = [
     description: "Excelente para principiantes.",
     price: 15500,
     stock: 10,
-    image: "",
+    image: "/img/pelota-dribbling-soft-touch.jpg",
     category: "pelota"
   },
   {
@@ -86,7 +86,7 @@ const products = [
     description: "Uso profesional.",
     price: 24500,
     stock: 6,
-    image: "",
+    image: "/img/pelota-gala-bv5595s.jpg",
     category: "pelota"
   },
   {
@@ -95,16 +95,16 @@ const products = [
     description: "Protección profesional.",
     price: 12000,
     stock: 5,
-    image: "",
+    image: "/img/rodilleras-mizuno-lr6-negras.jpg",
     category: "rodilleras"
   },
   {
     id: 12,
-    name: "Rodilleras Mizuno LR6 Negras",
+    name: "Rodilleras Mizuno LR6 Blancas",
     description: "Comodidad total.",
     price: 11500,
     stock: 3,
-    image: "",
+    image: "/img/rodilleras-mizuno-lr6-blancas.jpg",
     category: "rodilleras"
   },
   {
@@ -113,7 +113,7 @@ const products = [
     description: "Uso diario.",
     price: 11000,
     stock: 0,
-    image: "",
+    image: "/img/penalty-5.jpg",
     category: "rodilleras"
   },
   {
@@ -122,7 +122,7 @@ const products = [
     description: "Gran absorción de impacto.",
     price: 9000,
     stock: 8,
-    image: "",
+    image: "/img/rodilleras-drb.jpg",
     category: "rodilleras"
   },
   {
@@ -131,7 +131,7 @@ const products = [
     description: "Diseño ergonómico.",
     price: 10500,
     stock: 4,
-    image: "",
+    image: "/img/rodilleras-adidas-match.jpg",
     category: "rodilleras"
   },
   {
@@ -140,7 +140,7 @@ const products = [
     description: "Flexibles y livianas.",
     price: 9500,
     stock: 9,
-    image: "",
+    image: "/img/rodilleras-nike-court.jpg",
     category: "rodilleras"
   },
   {
@@ -149,7 +149,7 @@ const products = [
     description: "Protección confiable.",
     price: 9800,
     stock: 6,
-    image: "",
+    image: "/img/rodilleras-wilson.jpg",
     category: "rodilleras"
   },
   {
@@ -158,7 +158,7 @@ const products = [
     description: "Uso recreativo.",
     price: 8700,
     stock:0,
-    image: "",
+    image: "/img/rodilleras-allsix.jpg",
     category: "rodilleras"
   },
   {
@@ -167,7 +167,7 @@ const products = [
     description: "Buena relación price/calidad.",
     price: 8900,
     stock: 7,
-    image: "",
+    image: "/img/rodilleras-striker.jpg",
     category: "rodilleras"
   },
   {
@@ -176,7 +176,7 @@ const products = [
     description: "Confort y resistencia.",
     price: 10200,
     stock: 3,
-    image: "",
+    image: "/img/rodilleras-nassau.jpg",
     category: "rodilleras"
   },
   {
@@ -185,7 +185,7 @@ const products = [
     description: "Comodidad total.",
     price: 11500,
     stock: 6,
-    image: "",
+    image: "/img/rodilleras-proyec.jpg",
     category: "rodilleras"
   },
   {
@@ -194,7 +194,7 @@ const products = [
     description: "Tejido transpirable y liviano.",
     price: 15000,
     stock: 7,
-    image: "",
+    image: "/img/short-mujer-mizuno.jpg",
     category: "indumentaria"
   },
   {
@@ -203,7 +203,7 @@ const products = [
     description: "Secado rápido y gran comodidad.",
     price: 13500,
     stock: 0,
-    image: "",
+    image: "/img/short-nike-dry-7.jpg",
     category: "indumentaria"
   },
   {
@@ -212,7 +212,7 @@ const products = [
     description: "Ideal para partidos intensos.",
     price: 14500,
     stock: 5,
-    image: "",
+    image: "/img/camiseta-mizuno-performance.jpg",
     category: "indumentaria"
   },
   {
@@ -221,7 +221,7 @@ const products = [
     description: "Diseño deportivo con ajuste perfecto.",
     price: 12500,
     stock: 6,
-    image: "",
+    image: "/img/short-puma-flex.jpg",
     category: "indumentaria"
   },
   {
@@ -230,7 +230,7 @@ const products = [
     description: "Soporte muscular y elasticidad.",
     price: 17000,
     stock: 3,
-    image: "",
+    image: "/img/calza-larga-compresiva.jpg",
     category: "indumentaria"
   },
   {
@@ -239,7 +239,7 @@ const products = [
     description: "Mayor ventilación y confort.",
     price: 12800,
     stock: 8,
-    image: "",
+    image: "/img/camiseta-high-runner.jpg",
     category: "indumentaria"
   },
   {
@@ -248,7 +248,7 @@ const products = [
     description: "Ligero y resistente al desgaste.",
     price: 9800,
     stock: 4,
-    image: "",
+    image: "/img/camiseta-termica-montero.jpg",
     category: "indumentaria"
   },
   {
@@ -257,7 +257,7 @@ const products = [
     description: "Sujeción perfecta para entrenamiento.",
     price: 11000,
     stock: 9,
-    image: "",
+    image: "/img/top-deportivo-nike.jpg",
     category: "indumentaria"
   },
   {
@@ -266,7 +266,7 @@ const products = [
     description: "Diseño oficial de competición.",
     price: 14200,
     stock: 0,
-    image: "",
+    image: "/img/musculosa-reusch-hombre.jpg",
     category: "indumentaria"
   },
   {
@@ -275,7 +275,7 @@ const products = [
     description: "Movilidad total y tela suave.",
     price: 12000,
     stock: 6,
-    image: "",
+    image: "/img/short-mikasa.jpg",
     category: "indumentaria"
   },
   {
@@ -284,7 +284,7 @@ const products = [
     description: "Ideal para climas cálidos.",
     price: 9500,
     stock: 4,
-    image: "",
+    image: "/img/musculosa-nike-mujer.jpg",
     category: "indumentaria"
   }
 ]
