@@ -4,7 +4,7 @@ const products = [
     name: "Pelota Mikasa V200W",
     description: "Pelota oficial FIVB.",
     price: 25000,
-    stock: 7,
+    stock: 0,
     image: "",
     category: "pelota"
   },
@@ -67,7 +67,7 @@ const products = [
     name: "Pelota Nike Elite",
     description: "Liviana y precisa.",
     price: 17000,
-    stock: 2,
+    stock: 0,
     image: "",
     category: "pelota"
   },
@@ -112,7 +112,7 @@ const products = [
     name: "Rodilleras Penalty Pro",
     description: "Uso diario.",
     price: 11000,
-    stock: 6,
+    stock: 0,
     image: "",
     category: "rodilleras"
   },
@@ -157,7 +157,7 @@ const products = [
     name: "Rodilleras ALLSIX",
     description: "Uso recreativo.",
     price: 8700,
-    stock: 5,
+    stock:0,
     image: "",
     category: "rodilleras"
   },
@@ -202,7 +202,7 @@ const products = [
     name: "Short Nike Court Dry",
     description: "Secado rápido y gran comodidad.",
     price: 13500,
-    stock: 4,
+    stock: 0,
     image: "",
     category: "indumentaria"
   },
@@ -265,7 +265,7 @@ const products = [
     name: "Musculosa Reusch Hombre",
     description: "Diseño oficial de competición.",
     price: 14200,
-    stock: 5,
+    stock: 0,
     image: "",
     category: "indumentaria"
   },

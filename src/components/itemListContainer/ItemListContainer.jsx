@@ -1,6 +1,7 @@
 import "./itemlistcontainer.css";
 import getProducts from "../../data/data";
 import { useEffect, useState } from "react";
+import Item from "../item/Item"
 
 const ItemListContainer = (props) => {
   
@@ -14,12 +15,14 @@ const ItemListContainer = (props) => {
     })
 
   }, [])
-
-  console.log(products)
   
   return (
     <div className="itemlist-container">
-        {props.saludo}
+        {
+          products.map((product) => 
+            <Item product = {product} key={product.id}/>
+          )
+        }
     </div>
   )
 }
