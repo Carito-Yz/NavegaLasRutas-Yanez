@@ -1,24 +1,17 @@
 import "./itemlistcontainer.css";
-import getProducts from "../../data/data";
-import { useEffect, useState } from "react";
 import ItemList from "../itemList/ItemList"
+import useGetProducts from "../../hooks/useGetProducts";
+import Loading from "../loading/Loading";
 
 const ItemListContainer = (props) => {
   
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-
-    getProducts()
-    .then((data) => {
-        setProducts(data)
-    })
-
-  }, [])
+  const { products, loading } = useGetProducts()  
   
   return (
     <div className="itemlist-container">
-        <ItemList products = {products}/>
+      {
+        loading ? <Loading /> : <ItemList products = {products}/>
+      }
     </div>
   )
 }

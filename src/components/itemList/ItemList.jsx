@@ -1,6 +1,6 @@
 import Item from "../item/Item"
 
-const ItemList = ({products}) => {
+const ItemList = ({products =  []}) => {
   return (
     <div>
         {
