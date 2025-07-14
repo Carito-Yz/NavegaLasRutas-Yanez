@@ -297,4 +297,14 @@ const getProducts = () => {
     })
 }
 
-export default getProducts
+const getProductById = (productId) => {
+
+  return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const product = products.find((product) => product.id == productId)
+            resolve(product)
+        }, 3000)
+    })
+}
+
+export { getProducts, getProductById }

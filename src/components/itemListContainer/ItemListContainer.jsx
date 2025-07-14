@@ -2,10 +2,12 @@ import "./itemlistcontainer.css";
 import ItemList from "../itemList/ItemList"
 import useGetProducts from "../../hooks/useGetProducts";
 import Loading from "../loading/Loading";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   
-  const { products, loading } = useGetProducts()  
+  const { category } = useParams()
+  const { products, loading } = useGetProducts(category)  
   
   return (
     <div className="itemlist-container">

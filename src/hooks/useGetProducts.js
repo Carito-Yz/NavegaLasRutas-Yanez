@@ -1,21 +1,31 @@
 import { useEffect, useState } from "react"
-import getProducts  from "../data/data"
+import {getProducts}  from "../data/data"
 
-const useGetProducts = () => {
+const useGetProducts = (category) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     
     useEffect(() => {
 
+        setLoading(true)
+        
         getProducts()
         .then((data) => {
-            setProducts(data)
+            console.log(category)
+            if(category)
+            {
+                const filteredProducts = data.filter((product) => product.category == category)
+                setProducts(filteredProducts)
+            }
+            else{
+                setProducts(data)
+            }
         })
         .finally(() => {
             setLoading(false)
         })
 
-    }, [])
+    }, [category])
 
     return { products, loading }
 }

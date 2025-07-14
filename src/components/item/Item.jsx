@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Item = ({product}) => {
   return (
     <div className="card" style={{ width: "18rem" }}>
@@ -7,7 +9,9 @@ const Item = ({product}) => {
             <p className="card-text">$${product.price}</p>
             <hr></hr>
             <p className="card-text">{product.stock > 0 ? `Stock: ${product.stock}` : 'Sin stock'}</p>
-            <a href="#" className="btn btn-primary">Más Información</a>
+            <Link to={`/detail/${product.id}`}>
+              <p className="btn btn-primary">Más Información</p>
+            </Link>
         </div>
     </div>
   )
