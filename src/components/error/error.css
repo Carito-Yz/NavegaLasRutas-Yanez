@@ -1,0 +1,25 @@
+@import url("../../css/colors.css");
+
+.error-wrapper {
+  background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+}
+
+h1.display-1 {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.error-button {
+  background-color: var(--color-acento-1);
+  color: var(--color-texto);
+  border: none;
+}
+
+.error-button:hover {
+  background-color: var(--color-acento-2);
+  color: var(--color-claro);
+}
+
+.error-text{
+    color: var(--color-texto);
+}

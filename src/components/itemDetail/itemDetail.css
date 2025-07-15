@@ -1,0 +1,26 @@
+@import url("../../css/colors.css");
+
+.img-item-detail{
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.item-price-detail{
+    color: var(--color-acento-1);
+}
+
+.button-detail{
+    background-color: var(--color-acento-1);
+}
+
+.button-detail:hover{
+    background-color: var(--color-acento-2);
+}
+
+.button-detail-secondary{
+    border-color: var(--color-acento-1);
+}
+
+.button-detail-secondary:hover{
+    background-color: var(--color-acento-2);
+}

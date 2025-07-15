@@ -1,0 +1,23 @@
+@import url("../../css/colors.css");
+
+.card-buton{
+    background-color: var(--color-acento-1);
+}
+
+.card-buton:hover{
+    background-color: var(--color-acento-2);
+    color: var(--color-claro);
+}
+
+.item-price{
+    color: var(--color-acento-2);
+}
+
+.item-text{
+     color: var(--color-texto);
+}
+
+.card-detail:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px var(--color-acento-1);
+}

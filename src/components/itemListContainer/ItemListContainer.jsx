@@ -10,7 +10,7 @@ const ItemListContainer = () => {
   const { products, loading } = useGetProducts(category)  
   
   return (
-    <div className="itemlist-container">
+    <div className="container-fluid">
       {
         loading ? <Loading /> : <ItemList products = {products}/>
       }

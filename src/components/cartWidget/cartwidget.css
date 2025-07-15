@@ -1,14 +1,14 @@
-.cartWidget{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url("../../css/colors.css");
 
-.cartWidget h2{
+h2{
     font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    color: var(--color-claro);
 }
 
-.carrito-icono{
+.cart-icon{
     height: 1.5rem;
     width: auto;
+    color: var(--color-claro);
 }
