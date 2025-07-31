@@ -11,7 +11,6 @@ const useGetProducts = (category) => {
         
         getProducts()
         .then((data) => {
-            console.log(category)
             if(category)
             {
                 const filteredProducts = data.filter((product) => product.category == category)
