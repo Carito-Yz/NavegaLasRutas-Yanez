@@ -23,6 +23,7 @@ function App() {
             <Route path='*' element = {<Error />}></Route>
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/error' element={<Error />} />
           </Routes>
         </div>
       </CartProvider>

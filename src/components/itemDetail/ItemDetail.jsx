@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ("./itemDetail.css")
 import { Link } from "react-router-dom";
 import ItemCount from '../itemCount/ItemCount';
@@ -7,12 +7,14 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ( {product} = []) => {
 
-  const { addProductInCart } = useContext(CartContext);
+  const { addProductInCart } = useContext(CartContext)
+  const [addedToCart, setAddedToCart] = useState(false)
 
   const addProduct = (quantity) => {
     const productCart = {...product, quantity}
     
     addProductInCart(productCart)
+    setAddedToCart(true)
   }
 
   return (
@@ -47,7 +49,18 @@ const ItemDetail = ( {product} = []) => {
                 <li>Stock disponible</li>
               </ul>
 
-              <ItemCount stock={product.stock} addProduct = {addProduct}/>
+              {
+                addedToCart ? (
+                  <Link to="/cart"><button>Ir al carrito</button></Link>
+                ) : (
+                  product.stock != 0 ? (<ItemCount stock={product.stock} addProduct = {addProduct}/>) : (
+                    <div>
+                      <div>No hay stock</div>
+                      <Link to="/"><button>Volver al Inicio</button></Link>
+                    </div>
+                  )
+                )
+              }
             </div>
           </div>
         </div>

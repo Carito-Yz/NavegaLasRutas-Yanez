@@ -12,8 +12,14 @@ const useGetProduct = (idProduct) => {
             const docRef = doc(db, "products", idProduct)
             const dataDb = await getDoc(docRef)
 
-            const data = { id: dataDb.id, ...dataDb.data() }
-            setProduct(data)
+            if(dataDb.exists()){
+                const data = { id: dataDb.id, ...dataDb.data() }
+                setProduct(data)
+            }
+            else{
+                setProduct(null)
+            }
+
             setLoading(false)
 
         } catch (error) {

@@ -28,7 +28,13 @@ const Cart = () => {
           cart.length != 0 ? <button onClick={deleteAll}>Vaciar carrito</button> : <div>El carrito esta vacio</div>
         }
 
-        <Link to="/checkout">Finalizar Compra</Link>
+        {
+          cart.length == 0 ? (
+            <Link to="/">Comenzar Compra</Link>
+          ) : (
+            <Link to="/checkout">Finalizar Compra</Link>
+          )
+        }
     </div>
   )
 }

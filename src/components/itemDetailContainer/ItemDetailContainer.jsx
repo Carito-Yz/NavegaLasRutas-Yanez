@@ -1,7 +1,7 @@
 import useGetProduct from "../../hooks/useGetProduct.js"
 import Loading from "../loading/Loading.jsx"
 import ItemDetail from "../itemDetail/ItemDetail.jsx"
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 
 const ItemDetailContainer = () => {
 
@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
   return (
     <div>
         {
-            loading ? <Loading /> : <ItemDetail product = {product} />
+            loading ? <Loading /> : ( product != undefined ? <ItemDetail product = {product} /> : <Navigate to="/error"></Navigate>)
         }
     </div>
   )
