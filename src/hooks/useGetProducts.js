@@ -42,7 +42,7 @@ const useGetProducts = (category) => {
     
     useEffect(() => {
 
-        if(category){
+        if(category && category != "todo"){
             getProductsByCategory();
         }
         else{

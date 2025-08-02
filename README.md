@@ -1,12 +1,43 @@
-# React + Vite
+# Carolina Soledad Yañez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del Proyecto
 
-Currently, two official plugins are available:
+Este proyecto es una tienda online de equipamiento deportivo especializada en vóley. Los usuarios pueden navegar por el catálogo de productos, agregarlos al carrito, modificar cantidades y finalizar la compra a través de un formulario de checkout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Visualización de productos por categoría.
+- Sistema de carrito de compras:
+  - Agregar productos.
+  - Eliminar productos individuales o vaciar el carrito completo.
+  - Calcular subtotal por producto y total general.
+- Checkout con formulario validado:
+  - Nombre completo.
+  - Teléfono.
+  - Email.
+- Ruteo entre páginas (inicio, categorias, carrito, checkout).
+- Diseño responsive.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologías Utilizadas
+
+- React JS – Para la construcción de la interfaz de usuario y lógica.
+- Bootstrap 5 – Para estilos y diseño responsive.
+- CSS personalizado – Para ajustes visuales adicionales.
+- React Router DOM – Para el sistema de navegación entre rutas.
+- React Icons
+- React Spinners - Para pantalla de carga.
+- JavaScript
+- Firebase - Para almacenar datos en una base de datos guardando productos y ordenes realizadas
+
+## Instalación
+
+1. Clonar el repositorio:
+   git clone 
+
+2. Instalar dependencias:
+    npm install
+
+3. Ejecutar el proyecto
+    npm run dev
+
+4. Abrir en navegador

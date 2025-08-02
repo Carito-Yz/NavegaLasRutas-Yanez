@@ -51,12 +51,15 @@ const ItemDetail = ( {product} = []) => {
 
               {
                 addedToCart ? (
-                  <Link to="/cart"><button>Ir al carrito</button></Link>
+                  <div>
+                    <Link to="/cart"><button className="btn me-2">Ir al carrito</button></Link>
+                    <Link to="/"><button className="btn">Volver al Inicio</button></Link>
+                  </div>
                 ) : (
                   product.stock != 0 ? (<ItemCount stock={product.stock} addProduct = {addProduct}/>) : (
                     <div>
-                      <div>No hay stock</div>
-                      <Link to="/"><button>Volver al Inicio</button></Link>
+                      <div className="product-stock-text mb-2">Producto sin Stock</div>
+                      <Link to="/"><button className="btn">Volver al Inicio</button></Link>
                     </div>
                   )
                 )

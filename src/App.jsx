@@ -7,6 +7,7 @@ import Error from './components/error/Error';
 import { CartProvider } from './context/CartContext';
 import Cart from './components/cart/Cart';
 import Checkout from './components/checkout/Checkout';
+import ErrorProductNotFound from './components/errorProductNotFound/ErrorProductNotFound';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
             <Route path='*' element = {<Error />}></Route>
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
-            <Route path='/error' element={<Error />} />
+            <Route path='/error' element={<ErrorProductNotFound />} />
           </Routes>
         </div>
       </CartProvider>

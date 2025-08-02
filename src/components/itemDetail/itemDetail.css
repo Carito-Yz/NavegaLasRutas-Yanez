@@ -8,3 +8,8 @@
 .item-price-detail{
     color: var(--color-acento-1);
 }
+
+.product-stock-text{
+    color: var(--color-acento-1);
+    font-weight: bold;
+}

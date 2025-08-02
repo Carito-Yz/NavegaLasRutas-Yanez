@@ -1,0 +1,27 @@
+@import url("../../css/colors.css");
+
+.cart-container {
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 90dvh;
+}
+
+.cart-item {
+  border: none;
+  border-radius: 10px;
+}
+
+.product-img-container{
+    border-radius: 10px;
+}
+
+.product-img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.btn-empty-cart{
+    width: 20%;
+}

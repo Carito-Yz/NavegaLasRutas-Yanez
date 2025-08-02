@@ -15,7 +15,10 @@ const NavBar = () => {
 
             <div className="col-5 d-flex align-items-center">
                 <ul className="d-flex menu w-100 justify-content-evenly">
-                    <li className="col-3 text-center">
+                    <li className="col-2 text-center">
+                    <Link to="/category/todo">Todo</Link>
+                    </li>
+                    <li className="col-2 text-center">
                     <Link to="/category/pelota">Pelotas</Link>
                     </li>
                     <li className="col-3 text-center">

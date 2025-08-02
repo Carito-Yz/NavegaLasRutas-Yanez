@@ -3,6 +3,7 @@ import {CartContext} from "../../context/CartContext"
 import FormCheckout from "../formCheckout/FormCheckout"
 import { addDoc, collection } from "firebase/firestore"
 import db from "../../db/db.js"
+import { Link } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -13,7 +14,7 @@ const Checkout = () => {
     })
     const [orderId, setOrderId] = useState(null)
 
-    const {cart, totalPrice} = useContext(CartContext)
+    const {cart, totalPrice, deleteAll} = useContext(CartContext)
 
     const handleChangeInput = (event) => {
         setDataForm({...dataForm, [event.target.name] : event.target.value})
@@ -38,6 +39,7 @@ const Checkout = () => {
             const response = await addDoc(orderRef, order)
 
             setOrderId(response.id)
+            deleteAll()
 
         } catch (error) {
             console.log("Error al subir la orden")
@@ -48,9 +50,12 @@ const Checkout = () => {
     <div>
         {
             orderId ? (
-                <div>
-                    <h2>Orden generada correctamente!!</h2>
-                    <p>Guarde el identificador de su orden: {orderId}</p>
+                <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
+                    <div className="text-center">
+                        <h2 className="mb-3">Orden generada correctamente</h2>
+                        <p className="text-muted mb-4">Guarde el identificador de su orden: {orderId}</p>
+                        <Link to="/"><button className="btn">Volver al inicio</button></Link>
+                    </div>
                 </div>
             ) : (
                 <FormCheckout dataForm={dataForm} handleChangeInput={handleChangeInput} sendOrder={sendOrder}/>

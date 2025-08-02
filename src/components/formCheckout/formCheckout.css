@@ -1,0 +1,6 @@
+@import "../../css/colors.css";
+
+.form-body{
+    width: 50%;
+    max-width: '500px';
+}

@@ -1,0 +1,14 @@
+@import url("../../css/colors.css");
+
+.btn{
+    background-color: var(--color-acento-1);
+}
+
+.btn:hover{
+    background-color: var(--color-acento-2);
+    color: var(--color-claro);
+}
+
+.item-count-text{
+    height: 100%;
+}
