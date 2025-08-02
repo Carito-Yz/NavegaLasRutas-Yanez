@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una tienda online de equipamiento deportivo especializada en vóley. Los usuarios pueden navegar por el catálogo de productos, agregarlos al carrito, modificar cantidades y finalizar la compra a través de un formulario de checkout.
+Este proyecto es una tienda online de equipamiento deportivo especializada en vóley. Los usuarios pueden navegar por el catálogo de productos y filtrar por categorías, agregarl productos al carrito, modificar cantidades y finalizar la compra a través de un formulario de checkout.
 
 ## Funcionalidades
 
