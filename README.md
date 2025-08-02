@@ -32,7 +32,7 @@ Este proyecto es una tienda online de equipamiento deportivo especializada en v√
 ## Instalaci√≥n
 
 1. Clonar el repositorio:
-   git clone 
+   git clone https://github.com/Carito-Yz/ProyectoFinal-Yanez.git
 
 2. Instalar dependencias:
     npm install
