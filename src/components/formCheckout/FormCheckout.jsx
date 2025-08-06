@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./FormCheckout.css"
+import "./formCheckout.css"
 
 const FormCheckout = ({dataForm, handleChangeInput, sendOrder}) => {
   return (
