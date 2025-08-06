@@ -33,7 +33,8 @@ const Cart = () => {
                 </div>
               </div>
             ))}
-            <button className="btn mb-3 btn-empty-cart" onClick={deleteAll}>Vaciar carrito</button>
+            <button className="btn mb-3 btn-empty-cart me-3" onClick={deleteAll}>Vaciar carrito</button>
+            <Link to="/"><button className="btn mb-3">Volver al Inicio</button></Link>
           </div>
 
           <div className="col-md-4">
