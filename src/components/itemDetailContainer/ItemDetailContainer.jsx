@@ -8,8 +8,6 @@ const ItemDetailContainer = () => {
     const {idProduct} = useParams()
     const {product, loading} = useGetProduct(idProduct)
 
-    console.log(product)
-
   return (
     <div>
         {

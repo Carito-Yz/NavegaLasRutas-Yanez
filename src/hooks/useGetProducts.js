@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import db from "../db/db.js"
+import { useNavigate } from "react-router-dom"
 
 const useGetProducts = (category) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
+
+    const navigate = useNavigate()
  
     const getProducts = async() => {
         try {
@@ -18,7 +21,14 @@ const useGetProducts = (category) => {
             setLoading(false)
 
         } catch (error) {
-            console.log(error)
+            Swal.fire({
+                title: "Error",
+                text: "Se ha producido un error al cargar los productos. Inténtelo de nuevo",
+                icon: "error",
+                confirmButtonText: "Volver al inicio"
+                }).then(() => {
+                    navigate("/");
+            });
         }
     }
 
@@ -36,7 +46,14 @@ const useGetProducts = (category) => {
             setLoading(false)
 
         } catch (error) {
-            console.log(error)
+            Swal.fire({
+                title: "Error",
+                text: "Se ha producido un error al cargar los productos. Inténtelo de nuevo",
+                icon: "error",
+                confirmButtonText: "Volver al inicio"
+                }).then(() => {
+                    navigate("/");
+            });
         }
     }
     

@@ -3,7 +3,7 @@ import {CartContext} from "../../context/CartContext"
 import FormCheckout from "../formCheckout/FormCheckout"
 import { addDoc, collection } from "firebase/firestore"
 import db from "../../db/db.js"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -15,6 +15,8 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState(null)
 
     const {cart, totalPrice, deleteAll} = useContext(CartContext)
+
+    const navigate = useNavigate()
 
     const handleChangeInput = (event) => {
         setDataForm({...dataForm, [event.target.name] : event.target.value})
@@ -42,7 +44,14 @@ const Checkout = () => {
             deleteAll()
 
         } catch (error) {
-            console.log("Error al subir la orden")
+            Swal.fire({
+                title: "Error",
+                text: "Se ha producido un error al subir la Orden. Inténtelo de nuevo",
+                icon: "error",
+                confirmButtonText: "Volver al inicio"
+                }).then(() => {
+                    navigate("/");
+            });
         }
     }
 
